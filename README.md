@@ -11,7 +11,6 @@ CurrencySwapp is a Java-based currency conversion tool that fetches real-time ex
 - Handle API errors gracefully.
 - Structured logging and exception handling.
 ---
-## 🏗 Project Structure
 ## 📁 Project Structure
 
 ```
@@ -43,7 +42,7 @@ CurrencySwapp/
 
 1. Clone the repository:
    ```bash
-   https://github.com/TomasMoralesR/currency-converter-java.git
+   https://github.com/TomasMoralesR/currencyswapp-java.git
 
 2. Open the project in your Java IDE (IntelliJ, Eclipse, VS Code).
 3. Ensure Java 17+ is installed.
