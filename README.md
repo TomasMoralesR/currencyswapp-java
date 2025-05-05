@@ -12,25 +12,31 @@ CurrencySwapp is a Java-based currency conversion tool that fetches real-time ex
 - Structured logging and exception handling.
 ---
 ## 🏗 Project Structure
+## 📁 Project Structure
+
+```
 CurrencySwapp/
-│── src/
-│   ├── main/
-│   │   ├── java/com/currencyswapp/
-│   │   │   ├── api/
-│   │   │   │   ├── ExchangeRate.java
-│   │   │   ├── console/
-│   │   │   │   ├── ConsoleUI.java
-│   │   │   ├── exception/
-│   │   │   │   ├── InvalidAmountException.java
-│   │   │   │   ├── UnableToGetConversionRate.java
-│   │   │   ├── main/
-│   │   │   │   ├── CurrencySwapp.java
-│   │   │   ├── model/
-│   │   │   │   ├── ConversionResult.java
-│   │   │   ├── service/
-│   │   │   │   ├── ConverterService.java
-│── .gitignore
-│── README.md
+├── src/
+│   └── main/
+│       └── java/com/currencyswapp/
+│           ├── api/
+│           │   └── ExchangeRate.java
+│           ├── console/
+│           │   └── ConsoleUI.java
+│           ├── exception/
+│           │   ├── InvalidAmountException.java
+│           │   └── UnableToGetConversionRate.java
+│           │   └── UnableToLoadApiKey.java
+│           ├── model/
+│           │   └── ConversionResult.java
+│           ├── service/
+│           │   └── ConverterService.java
+│           └── main/
+│               └── CurrencySwapp.java
+├── .gitignore
+└── README.md
+```
+
 
 ---
 ## 🔧 Installation & Setup
