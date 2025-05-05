@@ -1,0 +1,65 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Compiled Java classes
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Build directories
+target/
+bin/
+
+
+# Maven & Gradle
+.mvn/
+.gradle/
+build/
+!src/main/**
+
+# Dependency cache
+**/node_modules/
+
+# Environment files (if using API keys)
+.env
+
+# JetBrains specific
+*.ipr
+*.iws
+*.idea/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
