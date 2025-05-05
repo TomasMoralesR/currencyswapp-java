@@ -14,9 +14,23 @@ import java.net.http.HttpResponse;
 /**This class handles fetching exchange rates from ExchangeRate-API*/
 public class ExchangeRate {
 
-    private static final Dotenv dotenv = Dotenv.load();
-    private static final String API_KEY = dotenv.get("API_KEY");
+    private static final String API_KEY = loadApiKey();
     private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/";
+
+    private static String loadApiKey() {
+        try {
+            Dotenv dotenv = Dotenv.load();
+            String apiKey = dotenv.get("API_KEY");
+
+            if (apiKey == null || apiKey.isBlank()) {
+                throw new UnableToLoadApiKey("API_KEY not found in .env file");
+            }
+
+            return apiKey;
+        } catch (Exception e) {
+            throw new UnableToLoadApiKey("Error loading the .env file or reading the API_KEY", e);
+        }
+    }
 
     /**
      * Retrieves the converted amount from the exchange API.
